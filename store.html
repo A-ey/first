@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>KRISPY KREME</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+     <link href="images/logo2.png" rel="shortcut icon"/>
+    
+   <!--aos plug css--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">    
+    
+    <link href="inc/store.css" rel="stylesheet"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+    
+    <script src="inc/store.js"></script>   		     	
+    
+        <!--이지스크롤-->
+    <script src="easescroll/jquery.easeScroll.js"></script>
+    
+
+</head>
+
+
+	<body>
+           
+           
+           
+       	        <div id="preload">
+	            <img src="images/preload1.gif" alt="preload">
+	        </div>
+           
+            
+            <div id="hbox"></div>
+            
+            
+            <section id="sec1">
+
+            </section>
+            
+            
+            
+            <section id="sec2">
+                <h2 >STORE</h2>
+                <p>달콤한 크리스피 크림 도넛이 생각나세요? 지금 가장 가까운 매장을 찾아보세요.</p>                
+            </section>
+            
+            
+            
+            
+            
+            <section id="sec3">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26085.75909413324!2d126.84396156779731!3d35.18853351320883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35718de4109f61eb%3A0xfa1259d3e6b63c62!2z7YGs66as7Iqk7ZS87YGs66a864-E64SbIOq4iO2YuO2EsOuvuOuEkOygkA!5e0!3m2!1sko!2skr!4v1650864693560!5m2!1sko!2skr" width="100%" height="1000" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
+                <div id="storebox" data-aos="fade-down-right" data-aos-duration="1000" data-aos-delay="300">
+                   <h3>KRISPY KREME STORE</h3>
+                    <input class="storename" type="text" placeholder="매장 이름" />
+                    
+                    <select name="city" class="city" >
+                        <option value="">도/시 선택</option>
+                        <option value="강원">강원</option>
+                        <option value="경기">경기</option>
+                        <option value="경남">경남</option>
+                        <option value="경북">경북</option>
+                        <option value="광주">광주</option>
+                        <option value="대구">대구</option>
+                        <option value="대전">대전</option>
+                        <option value="부산">부산</option>
+                        <option value="서울">서울</option>
+                        <option value="세종">세종</option>
+                        <option value="울산">울산</option>
+                        <option value="인천">인천</option>
+                        <option value="전남">전남</option>
+                        <option value="전북">전북</option>
+                        <option value="충남">충남</option>
+                        <option value="충북">충북</option>
+                        <option value="제주">제주</option>
+                    </select>
+                    
+                    <select name="district" id="group2">
+                        <option value="">구/군 선택</option>
+                    </select>
+                    
+                    <button class="storebutton buttonleft">내 위치</button>
+                    <button class="storebutton buttonright">매장 찾기</button>
+                </div>
+                
+                
+            </section>
+        
+                <div id="fbox"></div>
+            
+            
+            
+           <!--aos plugin-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+             <script>
+                    AOS.init();   //aos Script : 반드시 body 후반에 삽입할 것!!
+                 
+                 
+                             $(document).ready(function() {
+                    $("html, body").easeScroll({    // 전체 문서에 'easeScroll' 플러그인 적용
+                        animationTime:2000,     //스크롤 애니메이션 속도
+                        stepSize:120,    //스크롤 이동 간격
+                        //기타 기본 값 또는 생략 가능
+                    });
+          });
+                </script>            
+            
+            
+    </body>
+    
+   
+</html>

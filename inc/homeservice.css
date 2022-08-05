@@ -1,0 +1,91 @@
+@charset 'utf-8';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	 box-sizing:border-box;
+	 margin:0; outline:0;}
+
+
+/*------------------------------*/
+
+#preload{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: white; z-index: 9999;
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+#sec1{background: url(../images/home1.jpg) no-repeat fixed; width: 100%; height: 350px; margin-top: 60px;}
+
+
+#sec2{width: 100%; max-width: 1200px; margin: auto; height: 300px; text-align: center;}
+#sec2>h1{font-size: 5rem; font-family: 'Fredoka', sans-serif; color:#d0122c; padding-top: 3%;}
+#sec2 >p {font-weight: 700; margin-top: 10px; font-size: 1.6rem;}
+
+#donutbox{background: url(../images/movingdonut.png) repeat-x center; height:150px; width: 100%; animation: leftmove 50s linear infinite;}
+
+@keyframes leftmove {
+    0%{background-position: 0px 0px}
+    0%{background-position: 4000px 0px}
+    
+}
+
+
+#sec3{width: 100%; max-width: 1200px; margin: auto; margin-top: 50px;}
+#sec3cap{text-align: center;}
+#sec3cap h4{font-size: 1.8rem; }
+#sec3cap p{font-size: 1.2rem; margin-top: 10px;}
+#sec3 h3{font-size: 6rem; text-align: right; margin-top: 100px; color:#166936;}
+#homemenu{list-style: none; padding: 0; display: flex; flex-wrap: wrap; margin-top: 50px; }
+.hmenu{width: 20%; margin-right: 20px; text-align: center;}
+.hmenu img{width: 100%; display: block;}
+#moredn{display: flex; justify-content: flex-end; flex-wrap: wrap; margin-top: 60px;}
+#moredn h4{margin-right: 20px; font-size: 1.3rem;}
+#moredn button{ padding: 5px 20px; background:#166936; border:none; color:white; cursor: pointer; border-radius: 20px; border:2px solid #166936; transition:.3s;}
+#moredn button:hover{opacity: .8; }
+
+
+#sec4{width: 100%; max-width: 1200px; margin: auto; margin-top:200px;}
+#sec4 h3{font-size: 1.2rem; margin-bottom: 20px;}
+#deliveryinfo{list-style:square;}
+.dinfo{line-height: 30px;}
+#orderbox{list-style: none; padding: 0; display: flex; flex-wrap: wrap; justify-content: flex-end; align-items: center; margin-top: 80px;}
+.order{margin-left:30px; cursor: pointer;}
+.order img{width: 100%;}
+#orderbtbox{text-align: right;}
+.orderbt{background:#166936; color:white; border:none; padding: 5px 20px; font-size: 1rem; border-radius: 20px; cursor: pointer; margin-left: 20px; margin-top: 50px; transition: .3s; border:2px solid #166936}
+.orderbt:hover{opacity: .8; }
+
+
+#fbox{margin-top: 80px;}
+
+
+
+
+@media screen and (max-width:600px ) {
+    #sec2{height: 200px;}
+    #sec2>h1{font-size: 3rem;}
+    #sec2>p{font-size: 1.2rem;}
+    #donutbox{height: 150px;}
+    #moredn button{margin-top: 20px;}
+    
+    #sec3{margin-top: 20px; padding: 10px;}
+    #sec3 h3{font-size: 4rem;}
+    .hmenu{width: 45%; margin-right: 10px;}
+    
+    #sec4{padding:10px; margin-top: 100px;}
+    #sec4 h3{margin-bottom: 10px;}
+    .dinfo{line-height: 25px;}
+    #orderbox{justify-content: center; text-align: center;}
+    .order{width: 40%; margin-left: 20px; margin-bottom: 10px;}
+    .orderbt{padding: 3px10px; font-size: 1rem; margin-top: 30px;}
+}
+
+
+
+
+
+
+
+

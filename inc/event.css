@@ -1,0 +1,60 @@
+@charset 'utf-8';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+
+
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	 box-sizing:border-box;
+	 margin:0; outline:0;}
+
+
+/*------------------------------*/
+
+#preload{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: white; z-index: 9999;
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+#sec1{ width: 100%;  background:url(../images/eventimg.jpg) no-repeat fixed; height:300px;  margin-top: 60px; }
+
+#sec2{ width: 100%; max-width: 1200px; margin: auto; height:200px; position: relative; margin-bottom: 30px;}
+#sec2 h2{font-size: 5rem; text-align: center; line-height: 150px;  font-family: 'Fredoka', sans-serif; color:#d0122c;}
+#breadcrumb{position: absolute; bottom: 10px; right: 2%;}
+.bc{display: none;}
+.bc:nth-child(1){display: block;}
+
+#sec3{width: 100%; max-width: 1200px; margin: auto;}
+
+#eventbox2{list-style: none; padding: 0; display: flex;}
+.event2{margin-right: 40px; margin-bottom: 30px; cursor: pointer;font-size: 1.1rem;}
+.event2:hover{color:#d0122c; font-weight: 700;}
+.event2active{color:#d0122c; font-weight: 700;}
+
+#eventbox{list-style: none; padding: 0; display: flex; flex-wrap: wrap;}
+.imgbox{ overflow: hidden;}
+.event{width:23%; margin-right: 20px; margin-bottom: 20px;}
+
+.event img{width: 100%; display: block; transition: .3s;}
+.going img:hover{transform: scale(110%)}
+.event h4{font-size: 1.1rem; margin-top: 10px; cursor: pointer; font-weight: 700;}
+.event h4:hover {text-decoration: underline;}
+.end img{opacity: .5}
+
+
+
+#foot{margin-top: 50px;}
+
+
+@media screen and (max-width: 1150px){
+    #sec3{padding: 10px;}
+    .event{width: 30%; margin-right: }
+    .event2{font-size: 1rem;}
+    .event:nth-child(4n){margin-right: 30px;}
+}
+
+@media screen and (max-width: 600px) {
+    #sec3{padding: 10px;}
+    .event{width: 45%; margin-right: 30px;}
+    .event:nth-child(2n){margin-right:0;}
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>KRISPY KREME</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+     <link href="images/logo2.png" rel="shortcut icon"/>
+     
+    
+    <link href="inc/survey.css" rel="stylesheet"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+    <script src="inc/survey.js"></script>	
+    
+        <!--이지스크롤-->
+    <script src="easescroll/jquery.easeScroll.js"></script>
+    
+
+</head>
+
+
+	<body>
+
+       
+       
+       	        <div id="preload">
+	            <img src="images/preload1.gif" alt="preload">
+	        </div>
+       
+        
+          <div id="hbox"></div>
+           
+           
+         <section id="sec1">
+               
+                 <div id="surveyimg">
+                 <img src="images/img_intro02_01.png" alt="surveyimg" />
+                </div>
+                
+               </section>
+                 
+
+                 
+          <section id="sec2">
+              <h1>GUEST SATISFACTION SURVEY</h1>
+              <p>대한민국 Krispy Kreme 고객 만족 설문조사에 오신 것을 환영합니다. 본 설문조사에 시간을 할애하여 끝까지 진솔한 답변을 부탁합니다.</p>
+              
+              <div id="surveybox2">
+                 <div id="surveyleft">
+                  <h3>영수증에 있는 다음 정보를 입력하십시오.</h3>
+                  
+                  <h4>매장 번호 : <input type="text" id="storenum"/></h4>
+                  <h4>일자 : <input type="date"/></h4>
+                  <h4>시간 : <input type="time"/></h4>
+                  
+                  </div>
+                  
+                  <div id="surveyright">
+                      <img src="images/surveyrc.png" alt="receipt">
+                  </div>
+                  
+                  <button id="submit">제출</button>
+              
+                </div>
+
+                  
+              
+          </section>
+          
+          
+          
+          <section id="sec3">
+                <div id="sbleftbox">
+                    <p>ⓒ 2002 SMG. ALL right reserved.</p>
+                </div>              
+                
+                <div id="sbrightbox">
+                    <p>SMG 서비스 이용약관</p>
+                    <p>SMG 개인정보 보호정책</p>
+                </div>
+          </section>
+           
+           
+           
+           <div id="fbox"></div>
+           
+           
+           
+            <script>
+            $(document).ready(function() {
+                    $("html, body").easeScroll({    // 전체 문서에 'easeScroll' 플러그인 적용
+                        animationTime:2000,     //스크롤 애니메이션 속도
+                        stepSize:120,    //스크롤 이동 간격
+                        //기타 기본 값 또는 생략 가능
+                    });
+          });
+            </script>           
+           
+    </body>
+    
+   
+</html>

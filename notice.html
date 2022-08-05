@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>KRISPY KREME</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+     <link href="images/logo2.png" rel="shortcut icon"/>
+    
+    <link href="inc/notice.css" rel="stylesheet"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+    <script src="inc/notice.js"></script>	
+    
+        <!--이지스크롤-->
+    <script src="easescroll/jquery.easeScroll.js"></script>
+
+
+</head>
+
+
+	<body>
+
+        
+        
+       	        <div id="preload">
+	            <img src="images/preload1.gif" alt="preload">
+	        </div>
+        
+        
+          <div id="hbox"></div>
+           
+          
+          <section id="sec1">
+              
+          </section>
+          
+
+            
+            <section id="sec2">
+                <h1>NOTICE</h1>
+                <p>크리스피 크림의 새로운 소식을 모아 고객 여러분께 전합니다.</p>
+            </section>   
+                
+                    
+                
+             <section id="sec3">
+                
+                <div id="searchbox">
+                    <input type="text" />
+                    <button id="searchbt">검색</button>
+                </div>
+                
+                 <ul id="noticebox">
+                     <li class="noticelist">
+                         <h4>NO</h4>
+                         <h4>제목</h4>
+                         <h4>작성일</h4>
+                         <h4>조회</h4>
+                     </li>
+                     <li class="noticelist">
+                         <p>146</p>
+                         <p>개인정보처리방침 변경 안내</p>
+                         <p>2022.02.07</p>
+                         <p>141</p>
+                     </li>
+                     <li class="noticelist">
+                         <p>145</p>
+                         <p>일상 속 방역실천(방역패스 안내)</p>
+                         <p>2021.12.09</p>
+                         <p>207</p>                         
+                     </li>
+                     <li class="noticelist">
+                         <p>144</p>
+                         <p>시스템 점검 안내</p>
+                         <p>2021.10.26</p>
+                         <p>91</p>                         
+                     </li>
+                     <li class="noticelist">
+                         <p>143</p>
+                         <p>개인정보처리방침 변경 안내</p>
+                         <p>2021.10.14</p>
+                         <p>105</p>                         
+                     </li>
+                     <li class="noticelist">
+                         <p>142</p>
+                         <p>개인정보처리방침 변경 안내</p>
+                         <p>2021.07.30</p>
+                         <p>85</p>                         
+                     </li>
+                     <li class="noticelist">
+                         <p>141</p>
+                         <p>개인정보처리방침 변경 안내</p>
+                         <p>2021.07.27</p>
+                         <p>75</p>                         
+                     </li>
+                     <li class="noticelist">
+                         <p>140</p>
+                         <p>시스템 점검 안내</p>
+                         <p>2022.06.23</p>
+                         <p>94</p>                         
+                     </li>
+                     <li class="noticelist">
+                         <p>139</p>
+                         <p>TGI FRIDAYS 일부 제휴서비스 종료 안내</p>
+                         <p>2021.06.10</p>
+                         <p>185</p>                         
+                     </li>
+                 </ul>
+                 
+                 
+                 <ul id="numbox">
+                     <li class="num numactive">1</li>
+                     <li class="num">2</li>
+                     <li class="num">3</li>
+                     <li class="num">4</li>
+                     <li class="num">5</li>
+                 </ul>
+                 
+             </section>                          
+                           
+                            
+                            
+                <div id="fbox"></div>            
+        
+        
+        
+        
+                    <script>
+            $(document).ready(function() {
+                    $("html, body").easeScroll({    // 전체 문서에 'easeScroll' 플러그인 적용
+                        animationTime:2000,     //스크롤 애니메이션 속도
+                        stepSize:120,    //스크롤 이동 간격
+                        //기타 기본 값 또는 생략 가능
+                    });
+          });
+  </script>
+        
+        
+    </body>
+    
+            
+</html>         

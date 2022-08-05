@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>KRISPY KREME</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+     <link href="images/logo2.png" rel="shortcut icon"/>
+     
+      <!--aos plug css--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">     
+    
+    <link href="inc/membership.css" rel="stylesheet"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+    <script src="inc/membership.js"></script>	
+    
+        <!--이지스크롤-->
+    <script src="easescroll/jquery.easeScroll.js"></script>
+    
+
+
+</head>
+
+
+	<body>
+
+       
+       
+       	        <div id="preload">
+	            <img src="images/preload1.gif" alt="preload">
+	        </div>
+       
+        
+          <div id="hbox"></div>
+          
+         
+         <section id="sec1"></section>
+         
+         
+         
+         <section id="sec2">
+             <h1>MEMBERSHIP</h1>
+             <p>크리스피 크림 도넛의 결제 및 제휴 서비스 안내드립니다.</p>
+         </section>
+         
+         
+         
+         <section id="sec3">
+             
+             <h2>결제종류</h2>
+             
+             <p>*크리스피크림도넛 결제시스템 미이용 특수점 및 일부 점포는 이용에 제한이 있을 수 있습니다.</p>
+             
+             <ul id="paybox">
+                
+                 <li class="pay" data-aos="fade-up" data-aos-duration="1000">
+                     <img src="images/pay1.png" alt="payment">
+                     <h3>카드형 금액권</h3>
+                     <h4>고객센터 : 1644-5368</h4>
+                 </li>
+                 
+                 <li class="pay" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                     <img src="images/pay2.png" alt="payment">
+                     <h3>모바일 쿠폰</h3>
+                     <h4>고객센터 : 1644-4276</h4>
+                 </li>
+                 
+                 <li class="pay" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                     <img src="images/pay3.png" alt="payment">
+                     <h3>L.PAY</h3>
+                     <h4>고객센터 : 1899-6300</h4>
+                 </li>
+                 
+                 <li class="pay" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                     <img src="images/pay4.png" alt="payment">
+                     <h3>카카오페이</h3>
+                     <h4>고객센터 : 1644-7405</h4>
+                 </li>
+                 
+                 <li class="pay" data-aos="fade-up" data-aos-duration="1000"data-aos-delay="600">
+                     <img src="images/pay5.png" alt="payment">
+                     <h3>PAYCO</h3>
+                     <h4>고객센터 : 1544-6891</h4>
+                 </li>
+                 
+                 <li class="pay" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                     <img src="images/pay6.png" alt="payment">
+                     <h3>제로페이</h3>
+                     <h4>고객센터 : 1670-0582</h4>
+                 </li>
+                 
+                 <li class="pay" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+                     <img src="images/pay7.png" alt="payment">
+                     <h3>캐시비</h3>
+                     <h4>고객센터 : 1644-0006</h4>
+                 </li>
+                 
+                 <li class="pay" data-aos="fade-up" data-aos-duration="1000">
+                     <img src="images/pay8.png" alt="payment">
+                     <h3>알리페이</h3>
+                 </li>
+                 
+             </ul>
+             
+             <div id="paybox2">
+                 <div class="pbox2"   >
+                 <h2>포인트 적립</h2>
+                 <p style="text-align: left">*크리스피크림도넛 결제시스템 미이용 특수점 및 일부 점포는 이용에 제한이 있을 수 있습니다.</p>
+                 
+                     <div class="pbox2in" data-aos="fade-up" data-aos-duration="1000">
+                         <img src="images/point1.png" alt="point">
+                         <h3>L.point</h3>
+                         <h4>고객센터 : 1899-8900</h4>
+                     </div>
+                 </div>
+                 
+                 <div class="pbox2"  >
+                     <h2>제휴 할인</h2>
+                     <p style="text-align: left">*모든 제휴할인은 중복 적용 불가합니다.(할인 품목 제휴 할인 제외)<br/>
+                            *크리스피크림도넛 결제시스템 미이용 특수점 및 일부 점포는 이용에 제한이 있을 수 있습니다.</p>
+                            
+                        <div class="pbox2in"  data-aos="fade-up" data-aos-duration="1000">
+                         <img src="images/point2.png" alt="point">
+                         <h3>OK 캐쉬백</h3>
+                         <h4>고객센터 : 1599-0512</h4>                            
+                     </div>
+                     
+                 </div>
+                 
+             </div>
+         </section>
+         
+         
+         <div id="fbox"></div>
+         
+         
+         
+           <!--aos plugin-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+             <script>
+                    AOS.init();   //aos Script : 반드시 body 후반에 삽입할 것!!
+                 
+                 
+                             $(document).ready(function() {
+                    $("html, body").easeScroll({    // 전체 문서에 'easeScroll' 플러그인 적용
+                        animationTime:2000,     //스크롤 애니메이션 속도
+                        stepSize:120,    //스크롤 이동 간격
+                        //기타 기본 값 또는 생략 가능
+                    });
+          });
+                 
+            </script>
+                 
+         
+         
+         
+    </body>
+    
+   
+</html>

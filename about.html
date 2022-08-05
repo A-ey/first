@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>KRISPY KREME</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+     <link href="images/logo2.png" rel="shortcut icon"/>
+    
+    <link href="inc/about.css" rel="stylesheet"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    
+    <script src="inc/about.js"></script>   		     		
+    
+        <!--이지스크롤-->
+    <script src="easescroll/jquery.easeScroll.js"></script>
+
+</head>
+
+    <body>
+    
+             <div id="hbox"></div>
+            
+            <section id="sec1">
+                <div id="menubox">
+                  <div id="imgbox">
+                    <img src="images/menuimg1.jpg" alt="menuimg" class="mimg" />
+                    <img src="images/menuimg6.jpg" alt="menuimg"class="mimg"/>
+                    <img src="images/menuimg2.jpg" alt="menuimg"class="mimg"/>
+                    <img src="images/menuimg3.jpg" alt="menuimg" class="mimg"/>
+                    </div>
+                     <h1>MENU</h1>
+                    <div id="menuin">
+                        <a  class="menucircle menuactive" href="about.html">SEASON</a>
+                        <a class="menucircle" href="doughnut.html">DOUGHNUT</a>
+                        <a class="menucircle" href="coffee.html">COFFEE</a>
+                        <a class="menucircle" href="others.html">OTHERS</a>
+                    </div>
+                    
+                </div>
+            </section>
+        
+
+           
+            <section id="sec2">
+               
+               <div id="breadcrumb">
+                    <div class="bc"><i class="fa-solid fa-house"></i> HOME > MENU > SEASON</div>
+                    <div class="bc"><i class="fa-solid fa-house"></i> HOME > MENU > DOUGHNUT</div>
+                    <div class="bc"><i class="fa-solid fa-house"></i> HOME > MENU > COFFEE</div>
+                    <div class="bc"><i class="fa-solid fa-house"></i> HOME > MENU > OTHERS</div>
+               </div>               
+                
+                <div id="menutitle">
+                    <div class="title">SEASON</div>
+                    <div class="title">DOUGHNUT</div>
+                    <div class="title">COFFEE</div>
+                    <div class="title">OTHERS</div>
+                </div> 
+                
+                
+            </section>    
+
+       
+       
+           <section id="sec3">
+               
+               <h2>이달의 메뉴</h2>
+               <div id="monthmenu">
+                   <img src="images/monthdn.jpg" alt="ad" id="month">
+               </div>
+               
+           </section>
+       
+        
+        
+             <section id="sec4">
+                 <div id="menubox2">
+                    <div id="menuslide">
+                        <div class="mslide">
+                        <img src="images/drink1250.jpg" alt="new"/>
+                        <div class="mcaption"></div>
+                        </div>
+                        <div class="mslide">
+                        <img src="images/drink2250.jpg" alt="new"/>
+                        </div>
+                        <div class="mslide">
+                        <img src="images/new1250.jpg" alt="new"/>
+                        </div>
+                        <div class="mslide">
+                        <img src="images/new2250.jpg" alt="new"/>
+                        </div>
+                        <div class="mslide">
+                        <img src="images/new3250.jpg" alt="new"/>
+                        </div>
+                        <div class="mslide">
+                        <img src="images/new4250.jpg" alt="new"/>
+                        </div>
+                        <div class="mslide">
+                        <img src="images/new5250.jpg" alt="new"/>
+                        </div>
+
+                    </div>
+                    
+                    <button class="mbutton mleft">&#9001;</button>
+                    <button class="mbutton mright">&#9002;</button>
+                    
+                 </div>
+             </section>
+
+
+            <div id="fbox"></div>
+
+
+            <script>
+            $(document).ready(function() {
+                    $("html, body").easeScroll({    // 전체 문서에 'easeScroll' 플러그인 적용
+                        animationTime:2000,     //스크롤 애니메이션 속도
+                        stepSize:120,    //스크롤 이동 간격
+                        //기타 기본 값 또는 생략 가능
+                    });
+          });
+  </script>
+        
+
+
+</body>
+
+</html>

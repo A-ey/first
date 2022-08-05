@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>KRISPY KREME</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+     <link href="images/logo2.png" rel="shortcut icon"/>
+
+    
+    <link href="inc/event.css" rel="stylesheet"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+    
+    <script src="inc/event.js"></script>   		     		
+    
+        <!--이지스크롤-->
+    <script src="easescroll/jquery.easeScroll.js"></script>
+
+</head>
+
+
+	<body>
+            
+            
+            
+       	        <div id="preload">
+	            <img src="images/preload1.gif" alt="preload">
+	        </div>
+
+            <div id="hbox"></div>            
+            
+            <section id="sec1">
+                
+            </section>
+            
+            
+            
+            <section id="sec2">
+                <h2>EVENT</h2>
+                
+                 <div id="breadcrumb">
+                    <div class="bc"><i class="fa-solid fa-house"></i> HOME > EVENT > 전체</div>
+                    <div class="bc"><i class="fa-solid fa-house"></i> HOME > EVENT > 진행중인 이벤트</div>
+                    <div class="bc"><i class="fa-solid fa-house"></i> HOME > EVENT > 종료된 이벤트</div>
+                </div>
+                
+            </section>
+            
+            
+            
+            <section id="sec3">
+               
+               <ul id="eventbox2">
+                   <li class="event2 event2active">전체</li>
+                   <li class="event2">진행중인 이벤트</li>
+                   <li class="event2">종료된 이벤트</li>
+               </ul>
+               
+                <ul id="eventbox">
+                    <li class="event going">
+                       <div class="imgbox">
+                       <a href="#"><img src="images/eventlist.jpg" alt="event"></a>
+                        </div>
+                        <h4>크리스피크림 도넛 구미역사점 리뉴얼 오픈 D-3</h4>
+                    </li>
+                    
+                    <li class="event going">
+                       <div class="imgbox">
+                       <a href="#"><img src="images/eventlist2.jpg" alt="event"></a>
+                        </div>
+                        <h4>다양하게 활용가능한 크리스피크림 도넛 신상 굿즈</h4>
+                    </li>
+                    
+                    <li class="event going">
+                       <div class="imgbox">
+                       <a href="#"><img src="images/eventlist3.jpg" alt="event"></a>
+                        </div>
+                        <h4>크리스피크림 도넛 X 아소부 캠핑앤펫보틀</h4>
+                    </li>
+                    
+                    <li class="event going">
+                       <div class="imgbox">
+                       <a href="#"><img src="images/eventlist4.jpg" alt="event"></a>
+                        </div>
+                        <h4>만우절 깜짝 카카오톡 플러스 친구 이벤트</h4>
+                    </li>
+                    
+                    <li class="event going">
+                       <div class="imgbox">
+                       <a href="#"><img src="images/eventlist5.jpg" alt="event"></a>
+                        </div>
+                        <h4>롯데잇츠 신규가입 EVENT</h4>
+                    </li>
+                    
+                    <li class="event going">
+                       <div class="imgbox">
+                       <a href="#"><img src="images/eventlist6.jpg" alt="event"></a>
+                        </div>
+                        <h4>100% 당첨 랜덤뽑기 쿠폰</h4>
+                    </li>
+                    
+                    <li class="event end"><a href="#"><img src="images/eventlist7.jpg" alt="event"></a>
+                        <h4>롯데잇츠 앱 한정 크리스피크림 월간 구독</h4>
+                    </li>
+                    
+                    <li class="event end"><a href="#"><img src="images/eventlist8.jpg" alt="event"></a>
+                        <h4>롯데 GRS 트렌드리포터 18기 모집</h4>
+                    </li>
+                    
+                    <li class="event end"><a href="#"><img src="images/eventlist9.jpg" alt="event"></a>
+                        <h4>코지 베어 블랭킷 인증샷 이벤트</h4>
+                    </li>
+                    
+                    <li class="event end"><a href="#"><img src="images/eventlist10.jpg" alt="event"></a>
+                        <h4>12월 첫째주, 셋째주 수요일 오리지널 하프더즌 1+1 이벤트</h4>
+                    </li>
+                    
+                    <li class="event end"><a href="#"><img src="images/eventlist11.jpg" alt="event"></a>
+                        <h4>산타클로스 에디션 인증샷 이벤트</h4>
+                    </li>
+                    
+                    <li class="event end"><a href="#"><img src="images/eventlist12.jpg" alt="event"></a>
+                        <h4>크리스피크림 도넛 부산대점 신규 오픈 이벤트</h4>
+                    </li>
+                    
+                    <li class="event end"><a href="#"><img src="images/eventlist13.jpg" alt="event"></a>
+                        <h4>크리스피크림 도넛 X 트웰브그랩스 콜라보 이벤트</h4>
+                    </li>
+                    
+                </ul>
+            </section>
+            
+        
+                <div id="fbox"></div>
+                    
+            
+            
+            <script>
+            $(document).ready(function() {
+                    $("html, body").easeScroll({    // 전체 문서에 'easeScroll' 플러그인 적용
+                        animationTime:2000,     //스크롤 애니메이션 속도
+                        stepSize:120,    //스크롤 이동 간격
+                        //기타 기본 값 또는 생략 가능
+                    });
+          });
+  </script>            
+            
+            
+    </body>
+    
+</html>

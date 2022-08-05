@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>KRISPY KREME</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+     <link href="images/logo2.png" rel="shortcut icon"/>
+     
+       <!--aos plug css--->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <link href="inc/movie.css" rel="stylesheet"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+   
+    
+    <script src="inc/movie.js"></script>   		     		
+    
+        <!--이지스크롤-->
+    <script src="easescroll/jquery.easeScroll.js"></script>
+    
+
+
+</head>
+
+
+	<body>
+    
+               
+       	        <div id="preload">
+	            <img src="images/preload1.gif" alt="preload">
+	        </div>
+               
+                <div id="hbox"></div>
+                        
+            <section id="sec1">
+               <div id="moviebox">
+                <img src="images/movieback.jpg" alt="movieimg"/>
+
+                <div id="moviecaption">
+                       <h2>도넛극장</h2>
+                </div>                
+                </div>
+                
+            </section>
+            
+            
+            <section id="sec2">
+                <div id="sec2inbox">
+                     <h2>FUN. FRESH. AND WARM.</h2>
+                    <h3>오리지널 글레이즈드 도넛이 탄생하기까지 따끈한 제조과정을 만나보세요.</h3>
+                    <iframe width="1280" height="720" src="https://www.youtube.com/embed/6kfofxE17Vo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    
+                </div>
+        </section>
+                   
+                   
+                   <section id="sec3">
+                    
+                    <ul id="makingbox">
+                        <li class="making " data-aos="zoom-in" data-aos-duration="1000"><img src="images/making.jpg" alt="">
+                        <p>크리스피 크림만의 독특한 믹스로 이스트, 물과 섞어 커다란 반죽을 만듭니다.</p>
+                        </li>
+                        <li class="making"  data-aos="zoom-in" data-aos-duration="1000"><img src="images/making2.jpg" alt="">
+                        <p>'분출기'라는 기계에 넣고 공기압력으로 반죽을 잘라냅니다.  구멍이 없는 도넛은 나중에 잼, 커스터드, 치즈 필링 등으로 채웁니다.</p>
+                        </li>
+                        <li class="making"  data-aos="zoom-in" data-aos-duration="1000"><img src="images/making3.jpg" alt="">
+                        <p>길다란 '숙성기'는 도넛을 부풀어오르게 하는 기계입니다. 선반 위에 올려진 도넛이 위 아래로 천천히 움직이면서, 열과 습도로 인해 부풀어오릅니다.</p></li>
+                        <li class="making"  data-aos="zoom-in" data-aos-duration="1000"><img src="images/making4.jpg" alt="">
+                        <p>이스트로 부풀린 도넛이 순 식물성 기름 속으로 떨어집니다.</p></li>
+                        <li class="making"  data-aos="zoom-in" data-aos-duration="1000"><img src="images/making5.jpg" alt="">
+                        <p>그 다음 제조과정을 위해 도넛을 식힙니다.</p></li>
+                        <li class="making"  data-aos="zoom-in" data-aos-duration="1000"><img src="images/making6.jpg" alt="">
+                        <p>먹음직스러운 황금빛 갈색 도넛이 따뜻한 '글레이즈 폭포' 아래로 차례차례 지나가면, 여러분의 입맛에 맞는 맛있는 도넛이 탄생합니다.</p></li>
+                        <li class="making"  data-aos="zoom-in" data-aos-duration="1000"><img src="images/making7.jpg" alt="">
+                        <p>도넛들을 천천히 식히면서 이동시킨 뒤, 겉을 입히고 속을 채워서 어소티드 도넛으로 만듭니다.</p></li>
+                        <li class="making"  data-aos="zoom-in" data-aos-duration="1000"><img src="images/making8.jpg" alt="">
+                        <p>따뜻한 글레이즈드 도넛이 나오는 순간, 여러분이 바로 맛 볼 수 있도록 포장합니다. </p></li>
+                    </ul>
+                    
+                    
+                    <div id="dkstla">
+                        <div id="dkstlaleft"><img src="images/krispykreme-logo-alternate-en_39cb87ff.png" alt="original logo"></div>
+                        
+                        <div id="dkstlaright">
+                        <h3>안심하고 즐기세요!</h3>
+                        <p>크리스피 크림에서 당일 판매되지 않는 도넛은 전량 폐기처분 되니 안심하고 드세요.
+믿을 수 있는 크리스피 크림의 깐깐함이 고객 여러분들을 즐겁게 합니다.</p>
+                       <button id="original"><a href="doughnut.html">도넛 바로가기 &#10093;</a></button>
+                        </div>
+                    </div>
+        </section>
+
+                    
+                                                            
+            <div id="fbox"></div> 
+
+       
+                  <!--aos plugin-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+             <script>
+                    AOS.init();   //aos Script : 반드시 body 후반에 삽입할 것!!
+                 
+                 
+                             $(document).ready(function() {
+                    $("html, body").easeScroll({    // 전체 문서에 'easeScroll' 플러그인 적용
+                        animationTime:2000,     //스크롤 애니메이션 속도
+                        stepSize:120,    //스크롤 이동 간격
+                        //기타 기본 값 또는 생략 가능
+                    });
+          });
+                 
+                 
+                </script>
+        
+        
+        
+    </body>
+    
+   
+</html>

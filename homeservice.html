@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang='ko'>
+
+<head>
+
+	<meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>KRISPY KREME</title>
+	
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap" rel="stylesheet">
+
+     <link href="images/logo2.png" rel="shortcut icon"/>
+     
+  <!--aos plug css--->
+    <link   href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+     
+    
+    <link href="inc/homeservice.css" rel="stylesheet"/>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+
+    <script src="inc/homeservice.js"></script>	
+    
+      <!--이지스크롤-->
+    <script src="easescroll/jquery.easeScroll.js"></script>
+
+
+</head>
+
+
+	<body>
+
+       
+       	        <div id="preload">
+	            <img src="images/preload1.gif" alt="preload">
+	        </div>
+       
+        
+          <div id="hbox"></div>
+          
+            
+            <section id="sec1"></section>    
+                
+                
+            
+            <section id="sec2">
+                <h1>HOME SERVICE</h1>
+                <p>쉽고 편리한 크리스피크림 배달 서비스 시작! <br/>
+                        집, 사무실, 학교에서 더욱 편리하게 즐겨보세요!</p>
+            </section>        
+                 
+                 
+               <div id="donutbox"></div>
+                 
+
+              <section id="sec3">
+                
+                <div id="sec3cap">
+                <h4>크리스피 크림 도넛이 생각날 땐?</h4>
+                <p>이제 크리스피 크림 도넛을 집에서 즐겨보세요!<br/>(홈서비스 주문 가능 매장은 하단 매장 리스트를 확인해 주세요.)</p>
+                  </div>
+                
+                <h3 data-aos="fade-left" data-aos-duration="2000" data-aos-offset="300">DELIVERY BEST 4</h3>
+                <ul id="homemenu">
+                    <li class="hmenu" data-aos="fade-up"  data-aos-duration="1000" data-aos-offset="100">
+                    <img src="images/menu17.png" alt="deliverybest">
+                    <p>오리지널 더즌</p>
+                    </li>
+                    <li class="hmenu" data-aos="fade-up"  data-aos-duration="1000" data-aos-offset="100" data-aos-delay="200"
+>
+                    <img src="images/menu19.png" alt="deliverybest">
+                    <p>어쏘티드 더즌</p>
+                    </li>
+                    <li class="hmenu" data-aos="fade-up"  data-aos-duration="1000" data-aos-offset="100" data-aos-delay="400"
+>
+                    <img src="images/dozen1.png" alt="deliverybest">
+                    <p>러브 투게더 더즌</p>
+                    </li>
+                    <li class="hmenu" data-aos="fade-up"  data-aos-duration="1000" data-aos-offset="100" data-aos-delay="600"
+>
+                    <img src="images/dozen2.png" alt="deliverybest">
+                    <p>러브 투게더 하프더즌</p>
+                    </li>
+                </ul>
+                
+                <div id="moredn">
+                <h4>더 많은 크리스피 크림 도넛 보러가기</h4>
+                <button>도넛 바로가기</button>
+                </div>
+                
+            </section>     
+                 
+                  
+                
+            <section id="sec4">
+               
+                <h3>아래 배달 가능 점포와 배달 방법을 확인해 주세요!</h3>
+                    <ul id="deliveryinfo">
+                        <li class="dinfo">14,000원 이상 주문시 배달 가능합니다.</li>
+                        <li class="dinfo">할인쿠폰 및 모바일 쿠폰 사용불가 , 제휴카드 및 롯데멤버스 할인이 불가합니다.</li>
+                        <li class="dinfo">매장 상황에 따라 제품이 조기 품절될 수 있습니다.</li>
+                        <li class="dinfo">기상 조건 및 점포 상황에 따라서 홈서비스가 제한 또는 지연 될 수 있습니다.</li>
+                        <li class="dinfo">배달 가능한 지역인지 배달 어플 정보화면 또는 직원에게 다시한번 확인해주세요!</li>
+                    </ul>
+                    
+                                    
+                    <ul id="orderbox">
+                        <li class="order" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><img src="images/order2.png" alt="btn"></li>
+                        <li class="order" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><img src="images/order3.png" alt="btn"></li>
+                        <li class="order" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><img src="images/order1.png" alt="btn"></li>
+                        <li class="order" data-aos="fade-up" data-aos-duration="1000"><img src="images/order4.png" alt="btn"></li>
+                    </ul>
+                        
+                        <div id="orderbtbox">
+                        <button class="orderbt">매장찾기</button>
+                        <button class="orderbt">주문하기</button>
+                        </div>
+                        
+            </section>        
+             
+                  
+                            
+                  
+             <section id="sec5">
+                  <div id="searchstore"></div>
+              </section>
+                  
+                  
+                  
+                  <div id="fbox"></div>
+                  
+
+           <!--aos plugin-->
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+             <script>
+                    AOS.init();   //aos Script : 반드시 body 후반에 삽입할 것!!
+                 
+                             $(document).ready(function() {
+                    $("html, body").easeScroll({    // 전체 문서에 'easeScroll' 플러그인 적용
+                        animationTime:2000,     //스크롤 애니메이션 속도
+                        stepSize:120,    //스크롤 이동 간격
+                        //기타 기본 값 또는 생략 가능
+                    });
+          });
+                 
+                </script>
+                          
+                                    
+                                                                        
+                  
+    </body>
+   
+  
+</html>

@@ -1,0 +1,57 @@
+@charset 'utf-8';
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+
+
+*{
+	font-family: 'Noto Sans KR', sans-serif;
+	 box-sizing:border-box;
+	 margin:0; outline:0;}
+
+
+/*------------------------------*/
+
+
+#preload{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: white; z-index: 9999;
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+#sec1{width: 100%; background: url(../images/store.jpg) no-repeat fixed; height:350px; margin-top: 60px; position: relative;}
+#sec1 h2{text-align: center; position: absolute; top:30%; left:50%; font-size: 4rem; color:white; text-shadow: 0 0 4px rgba(0,0,0,.4);  font-family: 'Fredoka', sans-serif;}
+#sec1 p{text-align: center; font-weight: 700; font-size: 1.5rem; color:white; text-shadow: 0 0 5px rgba(0,0,0,.4); position: absolute; top:80%; left:50%; transform: translate(-50%,-80%);}
+
+
+#sec2{width: 100%; max-width: 1200px; margin: auto; height:300px; text-align: center;}
+#sec2 h2{ font-size: 5rem; color:#d0122c;font-family: 'Fredoka', sans-serif; padding-top: 5%;}
+#sec2 p{font-size: 1.6rem; font-weight: 700; margin-top: 10px;}
+
+
+#sec3{width: 100%; height:1000px; position: relative;}
+#storebox{position: absolute; top:10%; left:3%; width:350px; height:80%; background:#d0122c; border-radius: 20px;}
+#storebox h3{font-size: 1.6rem; font-family: 'Fredoka', sans-serif; text-align: center; margin-top: 20px; color:white;}
+
+.storename{margin-top: 20px; width:82%; padding:5px 10px; border-radius: 10px; border:none; margin-left:10%; font-size: .9rem;}
+.city{ margin-top: 10px; width: 40%; padding:5px; border-radius: 10px; border:none; margin-left: 10%; }
+#district{width: 40%; padding:5px; border-radius: 10px; border:none; margin-left: 3px;}
+.storebutton{margin-top: 10px; border:none; width:140px; background:white; padding:5px 0;color:#d0122c; font-size: 1rem; border-radius: 10px; transition: .3s; cursor: pointer; font-weight: 700;}
+.buttonleft{margin-left: 10%; margin-right: 3px;}
+
+.storebutton:hover{background:#166936; color:white;}
+
+
+
+
+
+
+
+@media screen and (max-width:600px) {
+    
+    #sec2{height: 200px;}
+    #sec2 h2{ font-size: 4rem;}
+    #sec2 p{font-size: 1rem; width: 80%; margin: auto; margin-top: 10px;}
+    #storebox{ top: 0; width: 100%; left: 0; border-radius: 0; height:24%;}
+    .buttonright{margin-left: auto;}
+}

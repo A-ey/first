@@ -1,0 +1,116 @@
+
+#preload{position: fixed; left: 0; top: 0; width: 100%; height: 100%; background: white; z-index: 9999;
+    display: flex; justify-content: center; align-items: center;
+}
+
+
+#sec1{
+    width:100%; margin-top: 70px;
+}
+#menubox{
+    width: 100%;
+    position: relative;
+}
+#imgbox{
+height: 100%;  width: 100%; 
+}
+#imgbox img{width: 100%;  opacity: .7; height:400px;}
+.mimg:nth-child(1) {display: none;}
+.mimg:nth-child(2) {display: none;}
+.mimg:nth-child(3) {display: none;}
+.mimg:nth-child(4) {display: block;}
+
+#menubox>h1{color:white; position: absolute; top:10%; left:50%; font-size: 3rem; transform: translateX(-50%);font-family: 'Fredoka', sans-serif; text-shadow: 0 0 2px black;}
+#menuin{
+    position: absolute; top:50%; left:50%; display: flex; transform: translate(-50%, -50%);
+}
+.menucircle{ margin-right: 100px; width:150px; background:rgba(0,0,0,.4);height:150px; border-radius: 50%; display: flex; justify-content: center; align-items: center;
+cursor: pointer; transition:1s; color:white; text-decoration: none;font-family: 'Fredoka', sans-serif; font-size: 1.5rem;}
+.menucircle:hover{background:black; transform: rotateY(360deg);}
+.menuactive{background:black; transform: rotateY(360deg);}
+
+
+
+#sec2{width: 100%; max-width: 1200px; margin: auto; padding: 5% 0;}
+#breadcrumb{margin-bottom: 50px; text-align: right;}
+.bc:nth-child(1) {display: none;}
+.bc:nth-child(2) {display: none;}
+.bc:nth-child(3) {display: none;}
+.bc:nth-child(4) {display: block;}
+#menutitle{display: flex; flex-wrap: wrap;}
+#menutitle::after{content:''; width:100%; background:#d0122c; height:2px; margin-top: 10px;}
+.title{text-decoration: none; color:#d0122c;
+font-size: 2rem; font-weight: 700; font-family: 'Fredoka', sans-serif;}
+.title:nth-child(1) {display:none;}
+.title:nth-child(2) {display:none;}
+.title:nth-child(3) {display:none;}
+.title:nth-child(4) {display:block;}
+
+#checkbox{ display: flex; padding: 0; list-style: none;}
+.checklist{cursor: pointer; margin-right: 40px; margin-top: 10px;}
+.checklist:hover{color:#d0122c;}
+.checklistactive{color:#d0122c;}
+
+
+
+#sec3{width: 100%; max-width: 1200px; margin: auto;}
+#othersbox{list-style: none; padding: 0; display: flex; flex-wrap: wrap;  }
+.others{width: 23%; text-align: center; border: 2px solid #d0122c; margin:0 10px;  margin-bottom: 20px;  cursor: pointer; position: relative; }
+.others img{width: 100%; display: block; margin-bottom: 10px;}
+.won{display: flex; justify-content: center; margin-top: 10px;}
+.won img{width: 25px; margin-right: 7px; align-items: center; margin-bottom: 30px;}
+
+.caption{position: absolute; top:0; left: 0; width:94%; height:94%; margin: 3%; background:#fad9df; padding: 4%;  text-align: left; transform: scale(0); display: flex; align-items: center;}
+.caption p{ font-size: 1rem; }
+.captiontop p:nth-child(2){font-weight: 700; font-size: 1.1rem; margin: 0;}
+.captiontop p:nth-child(2){ position: relative;}
+.captiontop p:nth-child(2)::after{position: absolute;
+top:100%; left: 0; width: 100%; content:''; background:#d31145; height:3px;}
+.ani{animation: ani1 .4s both;}
+
+
+.kcalinfo{position: absolute; top:10px; right:10px; background:white; border:1px solid #d0122c; border-radius: 20px; cursor: pointer; padding: 3px 10px; color:#d0122c; transition: .3s;}
+.kcalinfo:hover{background:#d0122c; color:white;}
+
+.kcalbox{position: absolute; top:15%; left:60%; width: 600px; bottom:-30%; border: 1px solid #ddd; background:white; height:220px; padding: 10px 20px; display: none; z-index: 9;}
+.kcalbox h5{margin-top: 20px; text-align: left;}
+th{background-color: #d0122c; padding: 2px; color:white;}
+td{border: 1px solid #ddd}
+
+
+@keyframes ani1{
+    0%{transform: scale(0)}
+    70%{transform: scale(110%)}
+    100%{transform: scale(100%)}
+}
+
+
+#fbox{margin-top: 100px;}
+
+
+
+@media screen and (max-width : 1000px) {
+    .others{width:30%;}
+}
+
+
+@media screen and (max-width : 600px) {
+    #imgbox img{height:300px;}
+    .menucircle{margin-right: 10px; width:85px; height:85px;}
+    .menucircle a{font-size: .9rem;}
+    #sec2{padding:10px;}
+    
+    .checklist{margin-right: 20px;}
+    .others{width: 43%;}
+    .caption p{font-size: .8rem;}
+    .kcalinfo{padding:1px 5px; font-size: .8rem;}
+}
+
+
+
+
+
+
+
+
+
